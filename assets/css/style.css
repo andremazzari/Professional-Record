@@ -1,0 +1,74 @@
+.titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-right: 70px;
+}
+
+.cadastro-form {
+    width: 35%;
+    max-width:400px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.form-item {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#tabela-profissionais {
+    border: 2px solid black;
+    border-spacing: 0;
+    width: 50%;
+}
+
+.tabela-cabecalho {
+    width: 19%;
+}
+
+.tabela-excluir {
+    width: 5%;
+}
+
+.botao-excluir {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-excluir:hover {
+    background-color: rgb(247, 127, 127);
+}
+
+.simbolo-excluir {
+    font-size: 20px;
+}
+
+#tabela-profissionais td {
+    padding: 5px 0px;
+    text-align: center;
+}
+
+.linha-profissional {
+    background-color: rgb(214, 212, 212);
+}
+
+.linha-profissional:hover {
+    background-color: grey;
+}
