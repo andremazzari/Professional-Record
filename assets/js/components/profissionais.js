@@ -20,8 +20,15 @@ class Profissionais {
         //Cria nova linha para a tabela
         let row = document.getElementById('tabela-profissionais').insertRow(-1);
 
-        row.setAttribute('class', 'linha-profissional')
-        row.setAttribute('id', 'profissional-' + (this.max_id).toString())
+        let sufixo_linha;
+        if (this.lista_profissioais.length % 2 == 0) {
+            sufixo_linha = "par";
+        } else {
+            sufixo_linha = "impar";
+        }
+        
+        row.setAttribute('class', 'linha-profissional linha-profissional-' + sufixo_linha);
+        row.setAttribute('id', 'profissional-' + (this.max_id).toString());
 
         //nome
         row.insertCell(0).innerText = dados_profissional.nome;
@@ -41,6 +48,21 @@ class Profissionais {
         let index = this.map_index_id.indexOf(id);
         this.lista_profissioais.splice(index, 1);
         this.map_index_id.splice(index,1);
+        this.atualizaCores();
+    }
+
+    atualizaCores() {
+        let sufixo_linha;
+        for (var index in this.map_index_id) {
+            if (index % 2 == 0) {
+                sufixo_linha = "par";
+            } else {
+                sufixo_linha = "impar";
+            }
+
+            let row = document.getElementById('profissional-' + (this.map_index_id[index]).toString())
+            row.setAttribute('class', 'linha-profissional linha-profissional-' + sufixo_linha);
+        }
     }
 
     constroi_lista() {

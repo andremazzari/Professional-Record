@@ -8,9 +8,9 @@
 .conteudo-principal {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
-    padding-right: 70px;
+    padding-top: 20px;
 }
 
 .cadastro-form {
@@ -21,36 +21,81 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+.form-titulo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .form-item {
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.input-cadastro {
+    border-radius: 10px;
+    border: 1px solid black;
+    padding-left: 6px;
+    width: 60%;
+}
+
+.form-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
 }
 
 #tabela-profissionais {
     border: 2px solid black;
     border-spacing: 0;
     width: 50%;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .tabela-cabecalho {
-    width: 19%;
+    width: 18%;
 }
 
-.tabela-excluir {
-    width: 5%;
-}
-
-.botao-excluir {
-    width: 23px;
-    height: 23px;
+.botao-linha {
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     cursor:pointer;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.tabela-editar {
+    width: 5%;
+}
+
+
+.botao-editar:hover {
+    background-color: rgb(191, 233, 93);
+}
+
+.simbolo-editar {
+    font-size: 20px;
+}
+
+.tabela-excluir {
+    width: 5%;
+}
+
 
 .botao-excluir:hover {
     background-color: rgb(247, 127, 127);
@@ -65,10 +110,21 @@
     text-align: center;
 }
 
-.linha-profissional {
-    background-color: rgb(214, 212, 212);
+.linha-profissional-par {
+    background-color: rgb(231, 229, 229);
+}
+
+.linha-profissional-impar {
+    background-color: rgb(202, 222, 248);
 }
 
 .linha-profissional:hover {
-    background-color: grey;
+    background-color: rgb(189, 188, 188);
+}
+
+.input-atualizar {
+    border-radius: 10px;
+    border: 0;
+    padding-left: 6px;
+    width: 80%;
 }
