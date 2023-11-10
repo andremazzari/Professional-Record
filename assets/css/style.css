@@ -79,30 +79,24 @@
     align-items: center;
 }
 
+.simbolo-botao-linha {
+    font-size: 20px;
+}
+
 .tabela-editar {
     width: 5%;
 }
 
-
-.botao-editar:hover {
+.botao-editar:hover, .botao-confirmar-edicao:hover {
     background-color: rgb(191, 233, 93);
-}
-
-.simbolo-editar {
-    font-size: 20px;
 }
 
 .tabela-excluir {
     width: 5%;
 }
 
-
-.botao-excluir:hover {
+.botao-excluir:hover, .botao-cancelar-edicao:hover {
     background-color: rgb(247, 127, 127);
-}
-
-.simbolo-excluir {
-    font-size: 20px;
 }
 
 #tabela-profissionais td {
