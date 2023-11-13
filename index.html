@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Cadastro de profissionais</title>
+        <title>Professional record</title>
         <meta charset="utf-8"/>
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -23,26 +23,26 @@
     <body>
         <div class="titulo">
             <h1>
-                Cadastro de profissionais
+                Professional record
             </h1>
         </div>
 
         <div class="conteudo-principal">
             <form class="cadastro-form">
                 <div class="form-titulo">
-                    <span>Formulário</span>
+                    <span>Form</span>
                 </div>
                 <div class="form-item">
-                    <label>Nome:</label><input id="form-nome" class="input-cadastro" type="text"/>
+                    <label>First ame:</label><input id="form-nome" class="input-cadastro" type="text"/>
                 </div>
                 <div class="form-item">
-                    <label>Sobrenome:</label><input id="form-sobrenome" class="input-cadastro" type="text"/>
+                    <label>Last name:</label><input id="form-sobrenome" class="input-cadastro" type="text"/>
                 </div>
                 <div class="form-item">
-                    <label>Idade:</label><input id="form-idade" class="input-cadastro" type="number" min = "0"/>
+                    <label>Age:</label><input id="form-idade" class="input-cadastro" type="number" min = "0"/>
                 </div>
                 <div class="form-item">
-                    <label>Linguagem principal:</label>
+                    <label>Main language:</label>
                     <select id="form-linguagem" class="input-cadastro">
                         <option value=""></option>
                         <option value="Javascript">JavaScript</option>
@@ -55,20 +55,20 @@
                     </select>
                 </div>
                 <div class="form-item">
-                    <label>Anos de experiencia:</label><input id="form-experiencia" class="input-cadastro" type="number" min = "0"/>
+                    <label>Years of experience:</label><input id="form-experiencia" class="input-cadastro" type="number" min = "0"/>
                 </div>
                 <div class="form-button">
-                    <input type="button" value="Cadastrar" onclick="atualiza_tabela()"/>
+                    <input type="button" value="Register" onclick="atualiza_tabela()"/>
                 </div>
             </form>
 
             <table id="tabela-profissionais">
                 <thead>
-                    <th class="tabela-cabecalho">Nome</th>
-                    <th class="tabela-cabecalho">Sobrenome</th>
-                    <th class="tabela-cabecalho">Idade</th>
-                    <th class="tabela-cabecalho">Linguagem principal</th>
-                    <th class="tabela-cabecalho">Anos de experiêcia</th>
+                    <th class="tabela-cabecalho">First name</th>
+                    <th class="tabela-cabecalho">Last name</th>
+                    <th class="tabela-cabecalho">Age</th>
+                    <th class="tabela-cabecalho">Main language</th>
+                    <th class="tabela-cabecalho">Years of experience</th>
                     <th class="tabela-editar"></th>
                     <th class="tabela-excluir"></th>
                 </thead>
