@@ -49,7 +49,7 @@
     width: 60%;
 }
 
-.form-buttons {
+.form-button {
     width: 100%;
     display: flex;
     align-items: center;
@@ -57,7 +57,7 @@
     padding-top: 15px;
 }
 
-.form-button {
+.form-button-item {
     margin-left: 15px;
     margin-right: 15px;
 }
