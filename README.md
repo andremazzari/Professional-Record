@@ -10,4 +10,4 @@ This repository contains the frontend implementation for registering software en
   <li>Remove professionals: Remove professionals from the record when necessary.</li>
 </ul>
 
-You can interact with the registration page and test its functionalities here.
+You can interact with the registration page and test its functionalities <a href="https://andremazzari.github.io/Professional-Record/" target="_blanck">here</a>.
