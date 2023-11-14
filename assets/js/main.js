@@ -48,3 +48,11 @@ function confirmar_edicao(id_profissional) {
 
     profissionais.confirmar_edicao(dados_atualizados, id_profissional);
 }
+
+function limpar_formulario() {
+    document.getElementById('form-nome').value = '';
+    document.getElementById('form-sobrenome').value = '';
+    document.getElementById('form-idade').value = '';
+    document.getElementById('form-linguagem').value = '';
+    document.getElementById('form-experiencia').value = '';
+}
