@@ -42,9 +42,9 @@ class Profissionais {
         //experiencia
         row.insertCell(4).innerText = dados_profissional.experiencia;
         //editar
-        row.insertCell(5).innerHTML = `<div class="botao-editar botao-linha" onclick="editar_profissional(${this.max_id})"><span class="simbolo-botao-linha material-symbols-outlined">edit</span></div>`
+        row.insertCell(5).innerHTML = `<div class="botao-editar botao-linha" onclick="editar_profissional(${this.max_id})"><span class="simbolo-botao-linha material-symbols-outlined" title="Edit">edit</span></div>`
         //excluir
-        row.insertCell(6).innerHTML = `<div class="botao-excluir botao-linha" onclick="excluir_profissional(${this.max_id})"><span class="simbolo-botao-linha material-symbols-outlined">close</span></div>`;
+        row.insertCell(6).innerHTML = `<div class="botao-excluir botao-linha" onclick="excluir_profissional(${this.max_id})"><span class="simbolo-botao-linha material-symbols-outlined" title="Remove">close</span></div>`;
     }
 
     construir_select(linguagem_selecionada) {
@@ -80,9 +80,9 @@ class Profissionais {
         //experiencia
         row.cells[4].innerHTML = `<input value="${dados_profissional.experiencia}" id="atualizar-experiencia" class="input-atualizar" type="number" min="0"/>`;
         //confirmar edicao
-        row.cells[5].innerHTML = `<div class="botao-confirmar-edicao botao-linha" onclick="confirmar_edicao(${id_profissional})"><span class="simbolo-botao-linha material-symbols-outlined">check</span></div>`
+        row.cells[5].innerHTML = `<div class="botao-confirmar-edicao botao-linha" onclick="confirmar_edicao(${id_profissional})"><span class="simbolo-botao-linha material-symbols-outlined" title="Confirm">check</span></div>`
         //cancelar edicao
-        row.cells[6].innerHTML = `<div class="botao-cancelar-edicao botao-linha" onclick="sair_da_edicao(${id_profissional})"><span class="simbolo-botao-linha material-symbols-outlined">replay</span></div>`;
+        row.cells[6].innerHTML = `<div class="botao-cancelar-edicao botao-linha" onclick="sair_da_edicao(${id_profissional})"><span class="simbolo-botao-linha material-symbols-outlined" title="Cancel">replay</span></div>`;
     }
 
     sair_da_edicao(id_profissional) {
@@ -102,9 +102,9 @@ class Profissionais {
         //experiencia
         row.cells[4].innerText = dados_profissional.experiencia;
         //editar
-        row.cells[5].innerHTML = `<div class="botao-editar botao-linha" onclick="editar_profissional(${id_profissional})"><span class="simbolo-botao-linha material-symbols-outlined">edit</span></div>`
+        row.cells[5].innerHTML = `<div class="botao-editar botao-linha" onclick="editar_profissional(${id_profissional})"><span class="simbolo-botao-linha material-symbols-outlined" title="Edit">edit</span></div>`
         //excluir
-        row.cells[6].innerHTML = `<div class="botao-excluir botao-linha" onclick="excluir_profissional(${id_profissional})"><span class="simbolo-botao-linha material-symbols-outlined">close</span></div>`;
+        row.cells[6].innerHTML = `<div class="botao-excluir botao-linha" onclick="excluir_profissional(${id_profissional})"><span class="simbolo-botao-linha material-symbols-outlined" title="Remove">close</span></div>`;
     }
 
     confirmar_edicao(dados_atualizados, id_profissional) {
