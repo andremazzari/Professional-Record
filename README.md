@@ -11,3 +11,5 @@ This repository contains the frontend implementation for registering software en
 </ul>
 
 You can interact with the registration page and test its functionalities <a href="https://andremazzari.github.io/Professional-Record/" target="_blanck">here</a>.
+
+This project was inspired by the classes at <a href="https://onovoprogramador.com/" target="_blanck">O Novo Programador</a> programming school.
